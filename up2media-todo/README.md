@@ -69,55 +69,6 @@ npm run dev
 ```
 The SPA runs at http://localhost:5173.
 
-
----
-
-### Project Structure
-
-```bash
- backend/                     # Laravel API
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   │   ├── AuthController.php
-│   │   │   └── TodoController.php
-│   ├── Models/
-│   │   ├── User.php
-│   │   └── Todo.php
-│   └── Requests/            # FormRequest validation
-│       ├── LoginRequest.php
-│       ├── RegisterRequest.php
-│       ├── TodoStoreRequest.php
-│       └── TodoUpdateRequest.php
-├── config/
-│   └── sanctum.php
-├── database/
-│   ├── migrations/
-│   └── seeders/
-└── routes/
-    ├── api.php
-    └── web.php
-    
-    
-
-frontend/                    # React + Vite SPA
-├── src/
-│   ├── api.ts               # Axios instance with interceptor
-│   ├── App.tsx              # Router & guards
-│   ├── main.tsx             # Entry point
-│   └── components/
-│       ├── auth/
-│       │   ├── Login.tsx
-│       │   └── Register.tsx
-│       ├── routes/
-│       │   ├── PrivateRoute.tsx
-│       │   └── PublicRoute.tsx
-│       └── todos/
-│           └── Todos.tsx
-├── index.html
-└── tailwind.config.js
-
- ```
 ---
 
 ### API Endpoints
